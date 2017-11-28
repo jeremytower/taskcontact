@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>title</title>
+  <link rel="stylesheet" href="mobile.css" type="text/css">
+  <link rel="stylesheet" href="jquery.mobile-1.4.5/jquery.mobile-1.4.5.min.css" />
+  
+<script src="jquery-1.11.1.min.js"></script>
+<script src="jquery.mobile-1.4.5/jquery.mobile-1.4.5.min.js"></script>
+<script src="external.js"></script>
+  </head>
+  <body>
+  <div data-role="page" id="frontPage" data-theme="a"><!--front page-->
+	<div data-role="header" data-theme="a" class="header">
+	Sales Pal</div>
+	<div role="main" class="ui-content">
+	<ul data-role="listview" data-theme="a">
+	<li><a href="#contactsPage" data-transition="slide">Contacts</a></li>
+	<li> <a href = "#taskPage" data-transition="slide">Task List</a></li>
+	</ul>
+	</div>
+</div><!--end front page-->
+<!--contacts page-->
+ <div data-role="page" id="contactsPage" data-theme="a">
+	<div data-role="header" data-theme="a" class="header" >
+	<a href="#frontPage" data-role="button" data-inline="true" data-mini="true" data-icon="carat-l" data-transition = "slide" data-direction="reverse"id="back">
+	Back</a>
+	Contacts<a href="#addNewContactPage" data-role="button" data-inline="true" data-rel="popup" data-mini="true"  data-icon="grid" id="newContact">
+	Add New</a></div>
+	<div role="main" class="ui-content">
+	
+
+
+	<div id="contactsDisplayArea"></div>
+	
+	</div>
+	
+	<!--addNew Page-->
+	<div data-role="popup" id="addNewContactPage" data-theme="a">
+	<div data-role="header" class="header">
+	<a href="#" data-role="button" class="ui-btn ui-icon-delete ui-btn-icon-notext ui-corner-all" id="closeAddPage" data-inline="true" data-mini="true" data-icon="delete" >
+	</a>
+	Add New</div>
+	<div role="main" class="ui-content">
+	<form id="addForm">
+	<label for="text-basic">Last Name:</label>
+<input type="text" name="text-basic" id="lastName" placeholder="Last Name...">
+<label for="text-basic">First Name:</label>
+<input type="text" name="text-basic" id="firstName" placeholder="First Name">
+<label for="text-basic">Phone:</label>
+<input type="text" name="text-basic" id="phone" placeholder="Phone...">
+<label for="text-basic">Email:</label>
+<input type="text" name="text-basic" id="email" placeholder="Email...">
+<input type="submit" value="Submit"data-inline="true" id ="submitNewContact">
+	</form>
+	</div>
+</div>
+<!--end addNew Page-->
+
+<!--contact Page-->
+	<div data-role="popup" id="contactPage" data-theme="a">
+	<div data-role="header" class="header">
+	<a href="index.html" data-role="button" class="ui-btn ui-icon-delete ui-btn-icon-notext ui-corner-all" data-inline="true" data-mini="true" data-rel="back" data-icon="delete" >
+	</a>
+	<div id="contactName"></div>
+	<div id="updateDelete" data-inline="true" ><a href="#" data-role="button" data-inline="true" data-rel="popup" data-mini="true"  data-icon="grid" id="updateContact">
+	Update</a>
+	<a href="#" data-role="button" id="deleteContact" data-inline="true" data-mini="true" data-rel="popup" data-icon="delete" >
+	Delete</a></div>
+	</div>
+	<div role="main" class="ui-content">
+	<div id="contactDisplay"></div>
+	<input type="hidden" id="contactId">
+	</div>
+</div>
+<!--end addNew Page-->
+
+</div><!--endcontactspage-->
+
+	
+	
+		<!--Ray Page-->
+	
+	<div data-role="page" id="rayPage" data-theme="a">
+	<div data-role="header" class="header">
+	<a href="index.html" data-role="button" data-inline="true" data-mini="true" data-rel="back" data-icon="carat-l" data-transition = "slide" data-direction="reverse"id="back">
+	Back</a>
+	Ray Wolske
+	<a href="#rayEditPage" data-role="button" data-inline="true" data-rel="popup" data-mini="true"  data-icon="grid" id="newContact">Edit</a>
+	</div>
+	<div role="main" class="ui-content">
+	Ray Wolske<br>
+	333-333-3333<br>
+	ray123@ray.com
+	</div>
+	
+	
+		<!--Ray edit Page-->
+	
+	<div data-role="popup" id="rayEditPage" data-theme="a">
+	<div data-role="header" class="header">
+	<a href="index.html" data-role="button" class="ui-btn ui-icon-delete ui-btn-icon-notext ui-corner-all" data-inline="true" data-mini="true" data-rel="back" data-icon="delete" >
+	</a>
+	Ray Woulske
+	
+	</div>
+	<div role="main" class="ui-content">
+	<form id="addForm">
+	<label for="text-basic">Last Name:</label>
+<input type="text" name="text-basic" id="text-basic" value="Wolske">
+<label for="text-basic">First Name:</label>
+<input type="text" name="text-basic" id="text-basic" value="Ray">
+<label for="text-basic">Phone:</label>
+<input type="text" name="text-basic" id="text-basic" value="333-333-3333">
+<label for="text-basic">Email:</label>
+<input type="text" name="text-basic" id="text-basic" value="Ray123@ray.com">
+<input type="submit" value="Submit"data-inline="true">
+	</form>
+	</div>	<!--end Ray edit Page-->
+</div>
+	
+	
+</div><!--end Ray Page-->
+
+	
+	
+	
+	
+		<!--Jacob Page-->
+	
+
+	
+	<div data-role="page" id="jacobPage" data-theme="a">
+	<div data-role="header" class="header">
+	<a href="index.html" data-role="button" data-inline="true" data-mini="true" data-rel="back" data-icon="carat-l" data-transition = "slide" data-direction="reverse"id="back">
+	Back</a>
+	Jacob Graceffa
+	<a href="#jacobEditPage" data-role="button" data-inline="true" data-rel="popup" data-mini="true"  data-icon="grid" id="newContact">Edit</a>
+	</div>
+	<div role="main" class="ui-content">
+	Jacob Graceffa<br>
+	333-333-3333<br>
+	jacobG@yahoo.com
+	</div>
+	
+	
+		<!--jacob edit Page-->
+	
+	<div data-role="popup" id="jacobEditPage" data-theme="a">
+	<div data-role="header" class="header">
+	<a href="index.html" data-role="button" class="ui-btn ui-icon-delete ui-btn-icon-notext ui-corner-all" data-inline="true" data-mini="true" data-rel="back" data-icon="delete" >
+	</a>
+	Jacob Graceffa
+	</div>
+	<div role="main" class="ui-content">
+	<form id="addForm">
+	<label for="text-basic">Last Name:</label>
+<input type="text" name="text-basic" id="text-basic" value="Graceffa">
+<label for="text-basic">First Name:</label>
+<input type="text" name="text-basic" id="text-basic" value="Jacob">
+<label for="text-basic">Phone:</label>
+<input type="text" name="text-basic" id="text-basic" value="333-333-3333">
+<label for="text-basic">Email:</label>
+<input type="text" name="text-basic" id="text-basic" value="jacobG@yahoo.com">
+<input type="submit" value="Submit"data-inline="true">
+	</form>
+	</div>	<!--end jacob edit Page-->
+</div>
+	
+	
+</div>
+	
+	
+	<!--end jacob Page-->
+	
+
+
+
+<!--task page-->
+ <div data-role="page" id="taskPage" data-theme="a">
+	<div data-role="header" data-theme="a" class="header" >
+	<a href="index.html" data-role="button" data-inline="true" data-mini="true" data-icon="carat-l" data-transition = "slide" data-direction="reverse"id="back">
+	Back</a>
+	Tasks<a data-role="button" data-inline="true" data-rel="popup" data-mini="true"  data-icon="grid" id="newTask">
+	Add New</a></div>
+	<div role="main" class="ui-content">
+	
+
+	<div id="taskDisplay"></div>
+	
+
+	</div>
+	
+	<!-- cat Page-->
+	<div data-role="popup" id="editCatPage" data-theme="a">
+	<div data-role="header" class="header">
+	<a href="index.html" data-role="button" class="ui-btn ui-icon-delete ui-btn-icon-notext ui-corner-all" data-inline="true" data-mini="true" data-rel="back" data-icon="delete" >
+	</a>
+	Task</div>
+	<div role="main" class="ui-content">
+	<form id="addForm">
+	<label for="text-basic">Task:</label>
+<input type="text" name="text-basic" id="text-basic" value="Buy 9 bags of cat food">
+
+<input type="submit" value="Submit"data-inline="true">
+	</form>
+	</div>
+</div>
+<!--end cat Page-->
+
+
+<!-- turtle Page-->
+	<div data-role="popup" id="editTurtlePage" data-theme="a">
+	<div data-role="header" class="header">
+	<a href="index.html" data-role="button" class="ui-btn ui-icon-delete ui-btn-icon-notext ui-corner-all" data-inline="true" data-mini="true" data-rel="back" data-icon="delete" >
+	</a>
+	Task</div>
+	<div role="main" class="ui-content">
+	<form id="addForm">
+	<label for="text-basic">Task:</label>
+<input type="text" name="text-basic" id="text-basic" value="Buy 9 bags of turtle food">
+
+<input type="submit" value="Submit"data-inline="true">
+	</form>
+	</div>
+</div>
+<!--end turtle Page-->
+
+<!-- delete Page-->
+	<div data-role="popup" id="deletePage" data-theme="a">
+	
+	<div role="main" class="ui-content">
+<a data-role="button" data-rel="back" data-icon="alert">Delete?</a>
+	</div>
+</div>
+<!--end delete Page-->
+
+<!-- newtask Page-->
+	<div data-role="popup" id="addNewTaskPage" data-theme="a">
+	<div data-role="header" class="header">
+	<a href="index.html" data-role="button" class="ui-btn ui-icon-delete ui-btn-icon-notext ui-corner-all" data-inline="true" data-mini="true" data-rel="back" data-icon="delete" >
+	</a>
+	Task</div>
+	<div role="main" class="ui-content">
+	<form id="addForm">
+	<label for="text-basic">Task:</label>
+<input type="text" name="text-basic" id="taskInput" placeholder="Enter task here...">
+
+<input type="submit" id ="submitTask" value="Submit"data-inline="true">
+	</form>
+	</div>
+</div>
+<!--end newtask Page-->
+
+
+<!--taskupdate page -->
+<div data-role="popup" id="taskUpdate" data-dialog="true">
+  <div data-role="main" class="ui-content">
+    Task: <input type="text" id="updateTask"><br>
+    <input type='hidden' id='hiddenID'>
+    <button id="finalUpdateButton">Update Task</button>
+    <a href="#frontPage" class="ui-btn">Go Home</a>
+  </div>
+</div>
+
+</div><!--end task page-->
+
+ 
+
+
+
+  
+  
+  
+  </body>
+</html>

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- config.xml reference: https://build.phonegap.com/docs/config-xml -->
+<widget xmlns     = "http://www.w3.org/ns/widgets"
+        xmlns:gap = "http://phonegap.com/ns/1.0"
+        id        = "com.ltcstudentweb.salespal"
+        version   = "1.0.0">
+
+    <name>Contact & Task List</name>
+
+    <description>
+       Contact and Task List
+    </description>
+
+    <author href="http://ltcstudentweb.com" email="tower47633@gotoltc.edu">
+        Jeremy Tower
+    </author>
+
+    <!--  Define app icon screen 
+            ldpi    : 36x36 px
+            mdpi    : 48x48 px
+            hdpi    : 72x72 px
+            xhdpi   : 96x96 px
+    -->
+   
+    <icon src="note.png"   gap:platform="android"    gap:qualifier="ldpi" />
+    <icon src="note.png"   gap:platform="android"    gap:qualifier="mdpi" />
+    <icon src="note.png"   gap:platform="android"    gap:qualifier="hdpi" />
+    <icon src="note.png"  gap:platform="android"    gap:qualifier="xhdpi" />
+   
+    <!-- Define app splash screen  -->
+    <!--
+        xlarge (xhdpi): at least 960 × 720
+        large (hdpi): at least 640 × 480
+        medium (mdpi): at least 470 × 320
+        small (ldpi): at least 426 × 320
+
+    -->
+   
+    <gap:splash src="basket.png"       gap:platform="android" gap:qualifier="port-ldpi" />
+    <gap:splash src="basket.png"       gap:platform="android" gap:qualifier="port-mdpi" />
+    <gap:splash src="basket.png"       gap:platform="android" gap:qualifier="port-hdpi" />
+    <gap:splash src="basket.png"      gap:platform="android" gap:qualifier="port-xhdpi" />
+
+</widget>

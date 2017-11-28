@@ -1,0 +1,72 @@
+html, body {
+	height: 100vh;
+	
+}
+
+.ui-content  {
+
+
+
+}
+
+.ui-content li a:hover {
+
+}
+.header {text-align: center;
+		height: 40px;
+		line-height: 40px;
+		background-size: 5px 5px, auto auto;
+	
+
+}
+
+.ui-popup-container{
+	width: 90%;
+	height: 90vh;
+	
+}
+
+#submitArea {
+	padding: 5px;
+	padding-left: 10px;
+	margin-top: 0;
+	
+}
+
+#submit {
+	height: 50px;
+	width: 120px;
+	background: linear-gradient(white, #c3c3c3 75%);
+	color: black;
+}
+#submit:hover{
+	background: linear-gradient(white, #b0b0b0 75%);
+}
+
+#text {
+	margin-bottom: 0;
+}
+
+#form {
+	border-radius: 5px;
+}
+
+#back {}
+
+a.contactButton{display: block;}
+#updateDelete{
+float: right;
+margin-top: -43px;
+}
+#updateContact{display: inline-block;}
+#deleteContact{display: inline-block;}
+
+/*
+#updateForm{
+	text-align: center;
+	
+}
+#updateForm input {
+	margin-bottom: 20px;
+	width: 90%;
+}*/
