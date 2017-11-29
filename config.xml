@@ -6,10 +6,10 @@
         id        = "com.ltcstudentweb.salespal"
         version   = "1.0.0">
 
-    <name>Contact and Task List</name>
+    <name>TaskList</name>
 
     <description>
-       Contact and Task List
+      TaskList
     </description>
 
     <author href="http://ltcstudentweb.com" email="tower47633@gotoltc.edu">
